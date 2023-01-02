@@ -271,3 +271,36 @@ img{
 .step:hover P{
     color: var(--bs-warning);
 }
+.invet{
+    position: relative;
+    z-index: 2;
+}
+.invet img{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    z-index: -1;
+}
+.invet::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2e0327;
+    opacity: 0.9;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.higher{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--bs-warning);
+    text-align: center;
+    line-height: 65px;
+    color: var(--bs-dark);
+    font-size: 28px;
+    border: 5px solid var(--bs-body-bg-dark);
+    box-shadow: -4.828px -4.828px 12px 0px rgb(255 200 39 / 40%), 3px 5px 15px 0px rgb(255 82 1 / 20%);
+}
